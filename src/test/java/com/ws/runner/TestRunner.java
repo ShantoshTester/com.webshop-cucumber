@@ -12,6 +12,6 @@ import org.junit.runner.RunWith;
                  plugin = {"pretty",
                          "json:target/reports/report.json",
                          "json:target/reports/report.xml",
-                         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},publish = false)
+                         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},publish = true)
 public class TestRunner {
 }

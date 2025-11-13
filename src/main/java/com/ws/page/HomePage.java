@@ -15,8 +15,13 @@ public class HomePage {
 
     private By login_link = By.linkText("Log in");
     private By logout_link = By.linkText("Log out");
+    private By user_email = By.xpath("(//a[@class='account'])[1]");
 
     // ******************************************** Page Methods ********************************************** //
+
+    public String getUserLoggedIn() {
+        return driver.findElement(user_email).getText();
+    }
 
     public boolean isLogoutLinkDisplayed() {
         return driver.findElement(logout_link).isDisplayed();

@@ -4,6 +4,7 @@ import com.ws.base.DriverFactory;
 import com.ws.page.HomePage;
 import com.ws.page.LoginPage;
 import io.cucumber.java.en.*;
+import org.junit.Assert;
 
 public class LoginPageSteps {
 
@@ -63,6 +64,12 @@ public class LoginPageSteps {
     public void i_should_see_is_displayed(String forgotPasswordLink) {
         boolean flag = loginPage.isForgotPasswordLinkDisplayed();
         System.out.println(flag);
+    }
 
+    @Then("element user logged in should be displayed")
+    public void element_user_logged_in_should_be_displayed() {
+        String expected = "gmail.com";
+        String actual = homePage.getUserLoggedIn();
+        Assert.assertTrue(actual.equals(expected));
     }
 }

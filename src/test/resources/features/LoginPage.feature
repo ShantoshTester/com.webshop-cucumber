@@ -38,7 +38,9 @@ Feature: Login Page Feature
     When  I click on login-link
     Then  login-page should be displayed
     Then  I enter my email as "admin1@ymail.com"
+    And   I enter my password as "pass@123"
     And   I click on login-button
+    Then  element user logged in should be displayed
 
 
 

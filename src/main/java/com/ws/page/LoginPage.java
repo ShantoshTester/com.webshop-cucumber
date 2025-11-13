@@ -15,7 +15,7 @@ public class LoginPage {
 
     private By emailTextbox = By.id("Email");
     private By passwordTextbox = By.name("Password");
-    private By loginButton = By.xpath("//input[@value='XXXX']");
+    private By loginButton = By.xpath("//input[@value='Log in']");
     private By forgotPasswordLink = By.linkText("Forgot password?");
     private By invalidCredentialsErr = By.xpath("//span[contains(text(),'unsuccessful')]");
 

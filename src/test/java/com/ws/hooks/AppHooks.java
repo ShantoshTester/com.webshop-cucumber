@@ -31,12 +31,13 @@ public class AppHooks {
         driver = driverFactory.init_driver(browserName);
     }
 
-    @After
+    @After(order = 0)
     public void quitDriver() throws InterruptedException {
         Thread.sleep(3000);
         driver.quit();
     }
 
+   @After(order = 1)
     public void tearDown(Scenario scenario) {
         if(scenario.isFailed()) {
             String screenshotName = scenario.getName().replaceAll(" ", "_");
