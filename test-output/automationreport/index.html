@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Android - Cucumber Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 13, 2025 07:26:28 AM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 13, 2025 07:58:12 AM</span></a>
 </li>
 </ul>
 </div>
@@ -52,11 +52,6 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,13 +61,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 13, 2025 07:26:28 AM</h3>
+<h3>Nov 13, 2025 07:58:12 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 13, 2025 07:27:11 AM</h3>
+<h3>Nov 13, 2025 07:58:14 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,9 +118,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
+<div><small data-tooltip='66%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='20%'><b>1</b> scenarios failed,
+<small data-tooltip='33%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +138,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='96%'><b>32</b> steps passed</small></div>
+<div><small data-tooltip='81%'><b>9</b> steps passed</small></div>
 <div>
-<small data-tooltip='3%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='9%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +157,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Page Feature":41.254
+"HomePage Components":0.252
 };
 </script>
 <div class="row">
@@ -202,16 +197,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 4,
+passChild: 2,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 32,
+passGrandChild: 9,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -238,9 +233,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login Page Feature</p>
+            <p class="name">HomePage Components</p>
             <p class="text-sm">
-              <span>7:26:29 AM</span> / <span>00:00:41:254</span>
+              <span>7:58:14 AM</span> / <span>00:00:00:252</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -248,10 +243,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Login Page Feature</h5>
-<span class='badge badge-success'>11.13.2025 7:26:29 AM</span>
-<span class='badge badge-danger'>11.13.2025 7:27:11 AM</span>
-<span class='badge badge-default'>00:00:41:254</span>
+<h5 class="test-status text-fail">HomePage Components</h5>
+<span class='badge badge-success'>11.13.2025 7:58:14 AM</span>
+<span class='badge badge-danger'>11.13.2025 7:58:14 AM</span>
+<span class='badge badge-default'>00:00:00:252</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -263,28 +258,30 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login Page Title Verification Scenario</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Test User Logged-In Successful</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_navigate_to(java.lang.String)">
-                <span>Given I navigate to "https://demowebshop.tricentis.com/"</span>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.i_logged_into_the_application(io.cucumber.datatable.DataTable)">
+                <span>Given I logged into the application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>admin1@ymail.com</td><td>pass@123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.element_user_logged_in_should_be_displayed(java.lang.String)">
+                <span>Then element user logged in "admin1@ymail.com" should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.i_click_on_logout_link()">
+                <span>When I click on logout link</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.home_page_should_be_displayed()">
                 <span>Then home-page should be displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_link()">
-                <span>When I click on login-link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.login_page_should_be_displayed()">
-                <span>Then login-page should be displayed</span>
       <div>
       </div>
               </div>
@@ -294,48 +291,27 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Test Valid Login Scenario</div>
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Test Product Headers Menu Text</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_navigate_to(java.lang.String)">
-                <span>Given I navigate to "https://demowebshop.tricentis.com/"</span>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.i_logged_into_the_application(io.cucumber.datatable.DataTable)">
+                <span>Given I logged into the application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>admin1@ymail.com</td><td>pass@123</td></tr></table>
+      </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.home_page_should_be_displayed()">
-                <span>Then home-page should be displayed</span>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.i_get_all_the_header_menu_text(io.cucumber.datatable.DataTable)">
+                <span>When I get all the header menu text</span>
+      <div><table class='markup-table table '><tr><td>BOOKS</td></tr><tr><td>COMPUTERS</td></tr><tr><td>ELECTRONICS</td></tr><tr><td>APPAREL & SHOES</td></tr><tr><td>DIGITAL DOWNLOADS</td></tr><tr><td>JEWELRY</td></tr><tr><td>GIFT CARDS</td></tr></table>
+      </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_link()">
-                <span>When I click on login-link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.login_page_should_be_displayed()">
-                <span>Then login-page should be displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_enter_my_email_as(java.lang.String)">
-                <span>Then I enter my email as "admin1@ymail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_enter_my_password_as(java.lang.String)">
-                <span>And I enter my password as "pass@123"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_button()">
-                <span>And I click on login-button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.log_out_link_should_be_displayed()">
-                <span>And log-out link should be displayed</span>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.i_verify_actual_header_text_with_the_expected_header_text()">
+                <span>Then I verify actual header-text with the expected header-text</span>
       <div>
       </div>
               </div>
@@ -345,153 +321,31 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Test Invalid Login Scenario</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_navigate_to(java.lang.String)">
-                <span>Given I navigate to "https://demowebshop.tricentis.com/"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.home_page_should_be_displayed()">
-                <span>Then home-page should be displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_link()">
-                <span>When I click on login-link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.login_page_should_be_displayed()">
-                <span>Then login-page should be displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_enter_my_email_as(java.lang.String)">
-                <span>Then I enter my email as "admin1@ymail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_enter_my_password_as(java.lang.String)">
-                <span>And I enter my password as "wrongpassword"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_button()">
-                <span>And I click on login-button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.login_unsuccessful_message_should_be_displayed()">
-                <span>And login unsuccessful message should be displayed</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Test Forgot Password Link isDisplayed</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_navigate_to(java.lang.String)">
-                <span>Given I navigate to "https://demowebshop.tricentis.com/"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.home_page_should_be_displayed()">
-                <span>Then home-page should be displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_link()">
-                <span>When I click on login-link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_should_see_is_displayed(java.lang.String)">
-                <span>Then I should see "forgot password link" is displayed</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="46"><span class="badge log fail-bg mr-2">Fail</span>Test Failure Login Scenario</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>Test Product Headers Menu Count</div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_navigate_to(java.lang.String)">
-                <span>Given I navigate to "https://demowebshop.tricentis.com/"</span>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.i_logged_into_the_application(io.cucumber.datatable.DataTable)">
+                <span>Given I logged into the application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>admin1@ymail.com</td><td>pass@123</td></tr></table>
+      </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.home_page_should_be_displayed()">
-                <span>Then home-page should be displayed</span>
+              <div class="step pass-bg" title="com.ws.stepdefinition.HomePageSteps.element_user_logged_in_should_be_displayed(java.lang.String)">
+                <span>Then element user logged in "admin1@ymail.com" should be displayed</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_link()">
-                <span>When I click on login-link</span>
-      <div>
+              <div class="step fail-bg" >
+                <span>When I get the header menu count</span>
+      <div>Step undefined
       </div>
               </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.login_page_should_be_displayed()">
-                <span>Then login-page should be displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_enter_my_email_as(java.lang.String)">
-                <span>Then I enter my email as "admin1@ymail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_enter_my_password_as(java.lang.String)">
-                <span>And I enter my password as "pass@123"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.ws.stepdefinition.LoginPageSteps.i_click_on_login_button()">
-                <span>And I click on login-button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="com.ws.stepdefinition.LoginPageSteps.element_user_logged_in_should_be_displayed()">
-                <span>Then element user logged in should be displayed</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.ws.stepdefinition.LoginPageSteps.element_user_logged_in_should_be_displayed(LoginPageSteps.java:73)
-	at ✽.element user logged in should be displayed(file:///C:/SDET/com.webshop-cucumber/src/test/resources/features/LoginPage.feature:43)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>com.ws.hooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Test_Failure_Login_Scenario
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
+              <div class="step skip-bg" >
+                <span>Then I should see the total header menu count as 7</span>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -509,59 +363,7 @@ eventsCount: 5,
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>07:27:07 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='56'>Then element user logged in should be displayed</a>
-<div class="">
-<span class="badge badge-default">Login Page Feature.Test Failure Login Scenario.Then element user logged in should be displayed</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div>        </div>
+        </div>
       </div>
     </div>
   </div>
