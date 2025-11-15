@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import static com.ws.utils.Constants.configReaderPath;
+
 public class ConfigReader {
 
     private Properties prop;
@@ -16,7 +18,7 @@ public class ConfigReader {
     public Properties init_prop() {
        prop = new Properties();
         try {
-            FileInputStream fis = new FileInputStream("./src/test/resources/config/config.properties");
+            FileInputStream fis = new FileInputStream(configReaderPath);
             prop.load(fis);
         }
         catch (FileNotFoundException e) {

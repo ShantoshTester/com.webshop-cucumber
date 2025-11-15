@@ -21,6 +21,12 @@ public class LoginPage {
 
     // ******************************************** Page Methods ********************************************** //
 
+    public void doLogin(String email, String password) {
+        driver.findElement(emailTextbox).sendKeys(email);
+        driver.findElement(passwordTextbox).sendKeys(password);
+        driver.findElement(loginButton).click();
+    }
+
     public String getLoginPageTitle() {
         return driver.getTitle();
     }
